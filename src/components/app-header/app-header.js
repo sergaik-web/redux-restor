@@ -6,7 +6,7 @@ import {Link} from "react-router-dom";
 const AppHeader = ({total}) => {
     return (
         <header className="header">
-            <Link to={'/mainpage/'} className="header__link">
+            <Link to={'/'} className="header__link">
                 Menu
             </Link>
             <Link to={'/cartpage/'} className="header__link">

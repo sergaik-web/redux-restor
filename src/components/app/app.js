@@ -15,7 +15,7 @@ const App = ({ RestoService }) => {
     >
       <AppHeader total={50} />
       <Switch>
-        <Route path={"/mainpage"} component={MainPage} />
+        <Route path={"/"} component={MainPage} exact />
         <Route path={"/cartpage"} component={CartPage} />
       </Switch>
     </div>
