@@ -1,8 +1,14 @@
 const menuLoaded = (newMenu) => {
   return {
-    menu: "MENU_LOADED",
+    type: "MENU_LOADED",
     payload: newMenu,
   };
 };
 
-export { menuLoaded };
+const menuRequested = () => {
+  return {
+    type: "MENU_REQUESTED",
+  };
+};
+
+export { menuLoaded, menuRequested };
