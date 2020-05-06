@@ -6,7 +6,7 @@ export default class RestoService {
       const res = await fetch(`${this.STATIC_URL}${url}`);
       return await res.json();
     } catch (err) {
-      throw new Error(err);
+      console.log(err);
     }
   }
 

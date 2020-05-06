@@ -11,4 +11,10 @@ const menuRequested = () => {
   };
 };
 
-export { menuLoaded, menuRequested };
+const menuError = () => {
+  return {
+    type: "MENU_CATCH"
+  }
+};
+
+export { menuLoaded, menuRequested, menuError };
