@@ -13,8 +13,22 @@ const menuRequested = () => {
 
 const menuError = () => {
   return {
-    type: "MENU_CATCH"
-  }
+    type: "MENU_CATCH",
+  };
 };
 
-export { menuLoaded, menuRequested, menuError };
+const addItemToCart = (newItem) => {
+  return {
+    type: "ADD_ITEM_TO_CART",
+    payload: newItem,
+  };
+};
+
+const deletedItemCart = (id) => {
+  return {
+    type: "DELETED_ITEM_CART",
+    id: id,
+  };
+};
+
+export { menuLoaded, menuRequested, menuError, addItemToCart, deletedItemCart };

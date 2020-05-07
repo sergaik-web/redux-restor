@@ -1,7 +1,7 @@
 import React from "react";
 import "./menu-list-item.scss";
 
-const MenuListItem = ({ menuItem }) => {
+const MenuListItem = ({ menuItem, addItemToCart }) => {
   const { title, price, url, category } = menuItem;
   return (
     <li className="menu__item">
@@ -13,7 +13,9 @@ const MenuListItem = ({ menuItem }) => {
       <div className="menu__price">
         Price: <span>{price}$</span>
       </div>
-      <button className="menu__btn">Add to cart</button>
+      <button onClick={() => addItemToCart()} className="menu__btn">
+        Add to cart
+      </button>
     </li>
   );
 };
